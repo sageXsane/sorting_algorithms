@@ -3,6 +3,7 @@
 
 #include <string.h>
 #include <stdio.h>
+#include <stddef.h>
 
 /**
  * struct listint_s - Doubly linked list node
@@ -22,5 +23,8 @@ void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 void bubble_sort(int *array, size_t size);
 void selection_sort(int *array, size_t size);
-
+void quick_sort(int *array, size_t size);
+void quick_sort_recursion(int *array, size_t size, int low, int high);
+int lomuto(int *array, size_t size, int low, int high);
+void swap(int *array, int i, int j);
 #endif
